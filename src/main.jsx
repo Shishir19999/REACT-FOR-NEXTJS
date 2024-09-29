@@ -9,4 +9,3 @@ import "slick-carousel/slick/slick-theme.css";
 // }
 // const el="hello react"
 createRoot(document.getElementById('root')).render(<App/>)
- 
