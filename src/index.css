@@ -1,24 +1,19 @@
-body{
-    background-color:rgb(242, 233, 233);
-}
-
 nav ul{
-display:flex;
-list-style: none;
-
-gap:30px;
-
+    display: flex;
+    list-style: none;
+    gap: 30px;
 }
+
 nav ul li a{
-
     text-decoration: none;
-    font-size: 25px;
-    background-color: blue;
-    color:white;
-    padding:15px 30px;
+    font-size: 24px;
+    background: blue;
+    color: white;
+    padding: 15px 30px;
+    transition: all linear 0.3s;
 }
-nav ul li a:hover{
 
-    background-color: red;
-    
+nav ul li a.active,
+nav ul li a:hover{
+    background: red;
 }
