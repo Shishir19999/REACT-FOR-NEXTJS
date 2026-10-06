@@ -1,10 +1,12 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import BannerItem from './BannerItem';
-import Slider from 'react-slick';
+import SlickModule from 'react-slick';
 
-export default function Banner({}) {
-  console.log('props');
-  const [sliders, setSliders] = useState([
+// react-slick is CommonJS (`exports.default`); Vite 8/Rolldown may hand back the namespace object.
+const Slider = SlickModule.default ?? SlickModule;
+
+export default function Banner() {
+  const [sliders] = useState([
     {
       title: 'react',
       content: 'this is  react content',
@@ -34,7 +36,7 @@ export default function Banner({}) {
   var bannerSliderSettings = {
     dots: true,
     infinite: true,
-    autoPlay: true,
+    autoplay: true,
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
@@ -42,8 +44,8 @@ export default function Banner({}) {
   return (
     <div>
       <Slider {...bannerSliderSettings}>
-        {sliders.map((item) => {
-          return <BannerItem title={item.title} content={item.content} />;
+        {sliders.map((item, index) => {
+          return <BannerItem key={index} title={item.title} content={item.content} />;
         })}
       </Slider>
     </div>

@@ -1,7 +1,6 @@
-import React from 'react'
 import { Link } from 'react-router-dom'
 
-function BannerItem() {
+function BannerItem({ title, content }) {
   return (
     <div className='item'>
       <h1>{title}</h1>
