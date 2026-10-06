@@ -1,8 +1,23 @@
-# React + Vite
+# REACTJS
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A Vite + React 19 practice app using React Router, axios and react-slick.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Routes: `/`, `/home`, `/about`, `/contact`, `/users`, `/users/:user_id`, and a 404 page
+- Users list and user detail pages fetched from [JSONPlaceholder](https://jsonplaceholder.typicode.com) with loading and error states
+- Home page banner carousel (react-slick)
+
+## Scripts
+
+```bash
+npm install
+npm run dev      # start the dev server
+npm run build    # production build
+npm run lint
+npm run preview
+```
+
+## Tooling (updated 2026-10-06)
+
+React 19.3, Vite 8, react-router-dom 7.18, react-slick 0.31 + slick-carousel 2.0, axios 1.20, ESLint 9. Requires Node ^20.19 or >=22.12.

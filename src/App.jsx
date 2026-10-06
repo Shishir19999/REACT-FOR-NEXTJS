@@ -1,4 +1,3 @@
-import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 import Header from './components/Header';
@@ -8,7 +7,7 @@ import AboutPage from './components/About';
 import ContactPage from './components/Contact';
 import NotFoundPage from './components/NotFound';
 import UsersPage from './components/Users';
-import UserDetailsPage from './components/UserDetailsPage';
+import UserDetailsPage from './components/UserDetailPage';
 
 function App() {
   return (
